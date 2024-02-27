@@ -17,8 +17,7 @@ void welcome(int* accountNumber, int* PIN){
 int account;
 int pin;
 
-std::cout << "\nWELCOME\n;
-!" << std::endl;
+std::cout << "\nWELCOME!\n" << std::endl;
 std::cout << "Please enter your account number: ";
 std::cin >> account;
 std::cout << "\nEnter your PIN: ";
