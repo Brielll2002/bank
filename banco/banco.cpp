@@ -17,7 +17,7 @@ void welcome(int* accountNumber, int* PIN){
 int account;
 int pin;
 
-std::cout << "\nWELCOME\n
+std::cout << "\nWELCOME\n;
 !" << std::endl;
 std::cout << "Please enter your account number: ";
 std::cin >> account;
@@ -45,7 +45,7 @@ void yourChoice(int* choice){
 
 void yourBalance(int balance, int choice){
     marcacao(50);
-    std::cout << "Seu saldo é: " << balance << "." << std::endl;
+    std::cout << "Seu saldo Ã©: " << balance << "." << std::endl;
     marcacao(50);
 
     system("pause");
@@ -59,14 +59,14 @@ void widthdraw(int* balance, int choice){
 
     if(response > *balance){
         marcacao(50);
-        std::cout << "Saldo insuficiente. Seu saldo é: " << *balance << std::endl;
+        std::cout << "Saldo insuficiente. Seu saldo Ã©: " << *balance << std::endl;
         marcacao(50);
         widthdraw(balance, choice);
     }
     else{
         *balance = *balance - response;
         marcacao(50);
-        std::cout << "Saque realizado com sucesso! Seu saldo agora é: " << *balance << std::endl;
+        std::cout << "Saque realizado com sucesso! Seu saldo agora Ã©: " << *balance << std::endl;
         marcacao(50);
 
         system("pause");
@@ -76,12 +76,12 @@ void widthdraw(int* balance, int choice){
 
 void depositFunds(int* balance, int choice){
     int response;
-    std::cout << "Digite o valor para depósito: " << std::endl;
+    std::cout << "Digite o valor para depÃ³sito: " << std::endl;
     std::cin >> response;
 
     *balance = *balance + response;
     marcacao(50);
-    std::cout << "Depósito realizado com sucesso. Seu saldo agora é: " << *balance << std::endl;
+    std::cout << "DepÃ³sito realizado com sucesso. Seu saldo agora Ã©: " << *balance << std::endl;
     marcacao(50);
 
     system("pause");
