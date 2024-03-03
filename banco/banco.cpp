@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <locale.h>
+#include <stdlib.h>
 
 int main();
 
@@ -14,6 +15,7 @@ std::cout << "|" << linha << "|" << std::endl;
 
 void welcome(int* accountNumber, int* PIN){
 
+system("cls");
 int account;
 int pin;
 
